@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [20.x]
 
     steps:
       - name: Checkout repository
@@ -27,7 +27,16 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build -- --base-href "https://ani-k.github.io/unpackit_front"
+        run: npm run build -- --base-href "https://ani-k.github.io/unpackit_front/"
+
+      - name: Verify build output
+        run: ls -la dist/unpackit
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/unpackit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx angular-cli-ghpages --dir=dist/unpackit --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ani-k/unpackit_front.git --no-silent
