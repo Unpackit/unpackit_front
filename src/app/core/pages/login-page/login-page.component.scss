@@ -1,9 +1,55 @@
 .login-page-form {
   display: flex;
   flex-direction: column;
-  width: 416px;
-  height: 323px;
+  align-items: center;
+}
+.login-page-form-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px
 }
 
-.logo {
+.login-page-form-logo__begin {
+  width: 167px;
+  height: 38px;
 }
+
+.login-page-form-logo__middle {
+  width: 475px;
+  height: 183px;
+}
+
+.login-page-form-logo__end {
+  width: 64px;
+  height: 53px;
+}
+
+.login-page-form-avatar-picture{
+  display: flex;
+
+}
+
+.login-page-form-avatar-picture__logo {
+  height: 321px;
+  width: 280px;
+}
+
+.login-page-form-avatar-picture__logo img{
+  border-radius: 50px;
+  height: 321px;
+  width: 249px;
+}
+
+.login-page-form-avatar-picture__mini-logo {
+  display: flex;
+  flex-direction: column;
+  width: 42px;
+
+}
+
+.login-page-form-avatar-picture__mini-logo img{
+  width: 42px;
+  height: 42px;
+}
+
