@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 78px;
+
 }
 .login-page-form-logo {
   display: flex;
@@ -27,7 +29,7 @@
 
 .login-page-form-avatar-picture{
   display: flex;
-
+  gap: 40px;
 }
 
 .login-page-form-avatar-picture__logo {
@@ -44,12 +46,12 @@
 .login-page-form-avatar-picture__mini-logo {
   display: flex;
   flex-direction: column;
-  width: 42px;
+  width: 20px;
 
 }
 
 .login-page-form-avatar-picture__mini-logo img{
-  width: 42px;
-  height: 42px;
+  width: 20px;
+  height: 20px;
 }
 
