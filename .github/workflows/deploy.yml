@@ -35,6 +35,10 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "Ani-k"
+
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
