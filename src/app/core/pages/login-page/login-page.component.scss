@@ -1,57 +1,63 @@
-.login-page-form {
+.page-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 78px;
 
 }
-.login-page-form-logo {
+.page-form__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px
 }
 
-.login-page-form-logo__begin {
+.page-form__logo-begin {
   width: 167px;
   height: 38px;
 }
 
-.login-page-form-logo__middle {
+.page-form__logo-middle {
   width: 475px;
   height: 183px;
 }
 
-.login-page-form-logo__end {
+.page-form__logo-end {
   width: 64px;
   height: 53px;
 }
 
-.login-page-form-avatar-picture{
+.page-form__pictures{
   display: flex;
   gap: 40px;
 }
 
-.login-page-form-avatar-picture__logo {
+.page-form__picture-logo {
+  display: flex;
+  flex-direction: row;
   height: 321px;
   width: 280px;
+  flex-wrap: nowrap;
 }
 
-.login-page-form-avatar-picture__logo img{
+.page-form__picture-logo-img{
   border-radius: 50px;
   height: 321px;
   width: 249px;
 }
 
-.login-page-form-avatar-picture__mini-logo {
+.page-form__mini-logo {
   display: flex;
   flex-direction: column;
-  width: 20px;
+  justify-content: center;
+  gap: 35px;
+  margin-left: -25px;
+
 
 }
 
-.login-page-form-avatar-picture__mini-logo img{
-  width: 20px;
-  height: 20px;
+.page-form__mini-logo img{
+  width: 42px;
+  height: 42px;
 }
 

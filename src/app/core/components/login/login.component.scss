@@ -29,7 +29,7 @@ h2 {
   height: 52px;
 }
 
-.login-form-group__sign-in-or-create {
+.login-form__elements {
   margin-top: 13px;
   font-family: Open Sans;
   display: grid;
@@ -38,15 +38,16 @@ h2 {
 
 }
 
-.login-form-group__sign-in-button{
+.login-form__element{
   font-family: "Open Sans";
   color: var(--light-color);
   font-weight: 700;
   font-size: 18px;
 }
 
-.login-form-group__create-account-link {
+.login-form__link {
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   gap: 5px;
   color: black;
@@ -55,10 +56,9 @@ h2 {
   font-size: 22px;
   font-style: oblique;
   text-decoration: none;
-
 }
 
 
-.login-form-group__create-account-link span{
+.login-form__link span{
   color: var(--text-button-color);
 }
