@@ -39,4 +39,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          npx angular-cli-ghpages --dir=dist/unpackit --repo=https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/ani-k/unpackit_front.git --no-silent
+          npx angular-cli-ghpages --dir=dist/unpackit --repo=https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/Unpackit/unpackit_front.git --no-silent
