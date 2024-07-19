@@ -1,4 +1,4 @@
-.button-form {
+.buttons {
   width: 422px;
   height: 55px;
   display: grid;
@@ -6,7 +6,7 @@
   grid-gap: 13px;
 }
 
-.button-form__img{
+.button{
   height: 55px;
   background: var(--light-color);
   border: 1px solid var(--border-color);

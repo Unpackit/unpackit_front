@@ -11,5 +11,6 @@ import {RouterOutlet} from "@angular/router";
   styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
-
+  logoSrc = '/assets/imgs/header/logo_header.svg';
+  localizationSrc = '/assets/imgs/header/localisation.svg';
 }
