@@ -1,14 +1,14 @@
 {
   "name": "unpackit",
   "version": "0.0.0",
-  "homepage": "https://ani-k.github.io/unpackit_front",
+  "homepage": "https://unpackit.github.io/unpackit_front",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href=/https://ani-k.github.io/unpackit_front/ && npx angular-cli-ghpages --dir=dist/unpackit"
+    "deploy": "ng build --base-href=/https://unpackit.github.io/unpackit_front/ && npx angular-cli-ghpages --dir=dist/unpackit"
   },
   "private": true,
   "dependencies": {
