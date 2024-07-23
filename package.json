@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href=/https://ani-k.github.io/unpackit_front/ && npx angular-cli-ghpages --dir=dist/unpackit"
+    "deploy": "ng build --base-href=/https://Unpackit.github.io/unpackit_front/ && npx angular-cli-ghpages --dir=dist/unpackit"
   },
   "private": true,
   "dependencies": {
