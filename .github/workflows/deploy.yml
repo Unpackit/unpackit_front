@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build -- --base-href "https://ani-k.github.io/unpackit_front/"
+        run: npm run build -- --base-href "https://unpackit.github.io/unpackit_front/"
 
       - name: Verify build output
         run: ls -la dist/unpackit
@@ -35,8 +35,12 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "Ani-k"
+
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          npx angular-cli-ghpages --dir=dist/unpackit --repo=https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/ani-k/unpackit_front.git --no-silent
+          npx angular-cli-ghpages --dir=dist/unpackit --repo=https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/unpackit/unpackit_front.git --no-silent
