@@ -1,4 +1,4 @@
 export interface IUser {
-  id: string,
-  wishlist: Array<string>
+  id: string;
+  wishlist: Array<string>;
 }

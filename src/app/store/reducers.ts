@@ -1,26 +1,31 @@
-import {IUser} from "../core/models/models";
-import {createFeature, createReducer, on} from "@ngrx/store";
-import {UnpackitActions} from "./actions";
+import { IUser } from '../core/models/models';
+import { createFeature, createReducer, on } from '@ngrx/store';
+import { UnpackitActions } from './actions';
 
 export interface UnpackitState {
-  isLoading: boolean,
-  user: IUser
+  isLoading: boolean;
+  user: IUser;
 }
 
 export const initialState: UnpackitState = {
   isLoading: false,
   user: {
     id: '',
-    wishlist: ['']
-  }
-}
+    wishlist: [''],
+  },
+};
 
 export const UnpackitFeature = createFeature({
-  name: "Unpackit",
+  name: 'Unpackit',
   reducer: createReducer(
     initialState,
-    on(UnpackitActions.getUserDataFromServer, (state: UnpackitState, {user}) => ({
-      ...state, isLoading: false, user
-    }))
-  )
-})
+    on(
+      UnpackitActions.getUserDataFromServer,
+      (state: UnpackitState, { user }) => ({
+        ...state,
+        isLoading: false,
+        user,
+      })
+    )
+  ),
+});
