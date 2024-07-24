@@ -1,7 +1,7 @@
 {
   "name": "unpackit",
   "version": "0.0.0",
-  "homepage": "https://ani-k.github.io/unpackit_front",
+  "homepage": "https://unpackit.github.io/unpackit_front",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
