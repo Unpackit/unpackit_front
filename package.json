@@ -10,7 +10,9 @@
     "test": "ng test",
     "deploy": "ng build --base-href=/https://ani-k.github.io/unpackit_front/ && npx angular-cli-ghpages --dir=dist/unpackit",
     "lint": "ng lint --fix",
-    "prettier": "npx prettier . --write"
+    "prettier": "npx prettier . --write",
+    "lint-stage": "npx lint-staged",
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
@@ -18,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,json,css,scss,md,html}": [
+    "*.{ts,js,css,scss,md,html}": [
       "prettier --write",
       "eslint --fix",
       "git add"
