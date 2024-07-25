@@ -11,4 +11,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class EntryPageComponent {
   title = 'unpackit';
+  saf = 'unpackit';
 }
