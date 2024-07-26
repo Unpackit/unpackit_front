@@ -1,0 +1,76 @@
+$font-size-base: 16px;
+$border-radius-base: 10px;
+$gap-base: 13px;
+$width-base: 416px;
+$height-base: 51px;
+
+
+@mixin font-settings($size, $family: "Open Sans", $weight: 400, $style: normal) {
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin border-settings($color, $radius: $border-radius-base) {
+  border: 1px solid $color;
+  border-radius: $radius;
+}
+
+@mixin flex-center($direction: column, $gap: $gap-base) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin grid-settings($columns: 2, $gap: 32px) {
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+
+.login-form__title {
+  @include font-settings(1.5rem, "Open Sans", 400);
+}
+
+.login-form {
+  @include flex-center(column, 0.8125rem);
+  height: 20.1875rem;
+  width: 26rem;
+}
+
+.login-form__field\._email,
+.login-form__field\._password {
+  @include border-settings(var(--border-color));
+  width: 100%;
+  height: 3.1875rem;
+}
+
+
+.login-form__buttons {
+  margin-top: 0.8125rem;
+  @include font-settings(1rem);
+  @include grid-settings(2, 2rem);
+}
+
+.sign-in-button {
+  @include font-settings(1.125rem, "Open Sans", 700);
+  color: var(--light-color);
+  @include border-settings(var(--border-color));
+  background-color: var(--border-color);
+  width: 11.125rem;
+  height: 3.25rem;
+}
+
+.login-form__link {
+  @include flex-center(row, 0.3125rem);
+  align-items: flex-end;
+  color: black;
+  @include font-settings(1.375rem, "Open Sans", 400, oblique);
+  text-decoration: none;
+}
+
+.create-account-link {
+  color: var(--text-button-color);
+}

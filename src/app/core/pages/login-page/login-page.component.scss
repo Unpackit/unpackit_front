@@ -1,0 +1,79 @@
+$logo-width: 167px;
+$logo-height: 38px;
+$logo-middle-width: 475px;
+$logo-middle-height: 183px;
+$logo-end-width: 64px;
+$logo-end-height: 53px;
+$picture-logo-height: 321px;
+$picture-logo-width: 280px;
+$picture-logo-img-size: 249px;
+$mini-logo-img-size: 42px;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-form {
+  @include column-center;
+  gap: 7.8rem;
+}
+
+.page-form__logo {
+  @include flex-center;
+  gap: 2.5rem;
+}
+
+.page-form__logo-begin {
+  width: $logo-width;
+  height: $logo-height;
+}
+
+.page-form__logo-middle {
+  width: $logo-middle-width;
+  height: $logo-middle-height;
+}
+
+.page-form__logo-end {
+  width: $logo-end-width;
+  height: $logo-end-height;
+}
+
+.page-form__pictures {
+  display: flex;
+  gap: 4rem;
+}
+
+.page-form__picture-logo {
+  @include flex-center;
+  flex-direction: row;
+  height: $picture-logo-height;
+  width: $picture-logo-width;
+}
+
+.page-form__picture-logo-img {
+  border-radius: 50px;
+  height: $picture-logo-img-size;
+  width: $picture-logo-img-size;
+}
+
+.page-form__mini-logo {
+  @include column-center;
+  gap: 3.5rem;
+  margin-left: -2.5rem;
+}
+
+.page-form__img {
+  width: $mini-logo-img-size;
+  height: $mini-logo-img-size;
+}
+
+
