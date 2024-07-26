@@ -32,7 +32,6 @@ $height-base: 51px;
 
 .login-form__title {
   @include font-settings(1.5rem, "Open Sans", 400);
-  margin-top: 0;
 }
 
 .login-form {
@@ -49,13 +48,13 @@ $height-base: 51px;
 }
 
 
-.login-form__elements {
+.login-form__buttons {
   margin-top: 0.8125rem;
   @include font-settings(1rem);
   @include grid-settings(2, 2rem);
 }
 
-.login-form__element {
+.sign-in-button {
   @include font-settings(1.125rem, "Open Sans", 700);
   color: var(--light-color);
   @include border-settings(var(--border-color));
@@ -72,6 +71,6 @@ $height-base: 51px;
   text-decoration: none;
 }
 
-.login-form__link span {
+.create-account-link {
   color: var(--text-button-color);
 }
