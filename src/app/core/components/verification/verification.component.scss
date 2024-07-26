@@ -1,0 +1,44 @@
+.verification {
+  padding-top: 67px;
+  display: flex;
+  flex-direction: column;
+  width: 584px;
+  height: 227px;
+  gap: 30px;
+}
+
+.verification__title {
+  display: block;
+  font-family: "Open Sans";
+  line-height: 32.68px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.verification__subtitle {
+  display: block;
+  font-family: "Open Sans";
+  line-height: 24.51px;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.verification__number {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 416px;
+  height: 51px;
+}
+
+.verification__continue {
+  font-family: "Open Sans";
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--border-color);
+  width: 130px;
+  height: 52px;
+}
