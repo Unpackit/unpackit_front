@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import {RouterOutlet} from '@angular/router';
   imports: [RouterOutlet],
   templateUrl: './entry-page.component.html',
   styleUrl: './entry-page.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntryPageComponent {
   title = 'unpackit';

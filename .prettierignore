@@ -1,0 +1,44 @@
+# Ignore artifacts:
+build
+coverage
+dist
+node_modules
+
+# Ignore editor directories and settings:
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Ignore configuration files and logs:
+*.log
+*.lock
+*.cache
+*.bak
+*.pid
+*.seed
+*.backup
+
+# Ignore specific file types:
+*.min.js
+*.min.css
+
+# Ignore generated files:
+**/*.ngfactory.ts
+**/*.ngsummary.json
+**/*.ngstyle.ts
+**/*.shim.ts
+**/*.map
+**/out-tsc
+**/temp
+**/tmp
+
+# Ignore Angular specific files:
+.angular
+.angular-cli.json
+*.ngsummary.json
+**/yarn.lock
+
+# Ignore other potential generated files:
+**/package-lock.json
+**/pnpm-lock.yaml
