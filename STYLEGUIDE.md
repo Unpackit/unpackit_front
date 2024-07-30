@@ -14,7 +14,7 @@ This project utilizes Prettier, ESLint, and Husky pre-commit hooks to ensure con
 ## 📝 Commit Message Format
 Commit messages should begin with one of the following keywords:
 - fix: A bug fix.
-- feat: A new feature.
+- feature: A new feature.
 - docs: Documentation changes.
 - style: Code style changes (formatting, missing semicolons, etc.).
 - refactor: Code changes that neither fix a bug nor add a feature.
